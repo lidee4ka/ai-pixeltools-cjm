@@ -790,11 +790,18 @@
   }
   .site-footer .wrap {
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: baseline;
-    justify-content: space-between;
     gap: 12px 24px;
+  }
+  .site-footer .foot-left {
+    justify-self: start;
+    text-align: left;
+  }
+  .site-footer .foot-right {
+    justify-self: end;
+    text-align: right;
   }
   .site-footer a {
     color: var(--link);
@@ -804,6 +811,8 @@
   .site-footer a:hover { color: var(--navy-ink); }
   .site-footer .slogan {
     margin: 0;
+    justify-self: center;
+    text-align: center;
     font-weight: 500;
     color: var(--ink);
   }
@@ -828,6 +837,18 @@
       width: 100%;
     }
     .site-footer { padding: 20px 0 36px; font-size: 12px; }
+    .site-footer .wrap {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
+      gap: 8px;
+    }
+    .site-footer .foot-left,
+    .site-footer .foot-right,
+    .site-footer .slogan {
+      justify-self: center;
+      text-align: center;
+    }
   }
 
   @media (max-width: 720px) {
@@ -1656,9 +1677,9 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>Лидия Мялкина · Product Manager · <a href="https://lidee4ka.github.io/cv-PMAI/" target="_blank" rel="noopener">cv-PMAI</a></span>
+    <span class="foot-left">Лидия Мялкина · Product Manager · <a href="https://lidee4ka.github.io/cv-PMAI/" target="_blank" rel="noopener">cv-PMAI</a></span>
     <p class="slogan">«ЛУНА&nbsp;— ТВЁРДАЯ» <cite>©&nbsp;С.&nbsp;Королёв</cite></p>
-    <span>Ярославль · 2026</span>
+    <span class="foot-right">Ярославль · 2026</span>
   </div>
 </footer>
 
