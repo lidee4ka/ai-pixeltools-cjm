@@ -25,7 +25,7 @@
 ## 2. Customer Journey Map (фреймворк NN/g + Jobs-to-be-Done)
 
 **Интерактивный вид отчёта (горизонтальная таблица со скроллом + превью скринов с увеличением):**  
-[`02_report_CJM_blockers_RICE.html`](./02_report_CJM_blockers_RICE.html)
+[`index.html`](./index.html)
 
 Использован каркас **Nielsen Norman Group CJM** + колонка **Job этапа** (Jobs-to-be-Done).  
 **Персона:** PM стартапа BEANABOX.  
@@ -71,7 +71,7 @@
 
 Формула: **RICE = (R × I × C) / E**. Сортировка по RICE ↓.
 
-Интерактивная таблица: [`02_report_CJM_blockers_RICE.html`](./02_report_CJM_blockers_RICE.html)
+Интерактивная таблица: [`index.html`](./index.html)
 
 | № | Название блокера (что / где / когда) | Тип | Влияние на JTBD | R | I | C | E | R×I×C | RICE |
 |---|------------------|-----|-----------------|---|---|---|---|-------|------|
@@ -186,7 +186,7 @@ ICE **не заменяет** RICE: у багов Ease раздувает сре
 **Выбрано одно улучшение (A):** не объяснена цепочка «промпты → автоконкуренты/аналитика» на экране подобранных промптов перед «Создать проект» (RICE 12.2).
 
 Обоснование и карта блокеров на воронке — в основном документе для отправки:  
-[`02_report_CJM_blockers_RICE.html`](./02_report_CJM_blockers_RICE.html)
+[`index.html`](./index.html)
 
 ЮMoney и footer остаются в бэклоге как **низкий приоритет / note**.
 
@@ -194,5 +194,5 @@ ICE **не заменяет** RICE: у багов Ease раздувает сре
 
 ТЗ и прототип готовы:
 - [`03_prototype_prompts_chain.html`](./03_prototype_prompts_chain.html)
-- §5 в [`02_report_CJM_blockers_RICE.html`](./02_report_CJM_blockers_RICE.html)
+- §5 в [`index.html`](./index.html)
 - краткий текстовый дубль: [`03_TZ_prompts_chain.md`](./03_TZ_prompts_chain.md)

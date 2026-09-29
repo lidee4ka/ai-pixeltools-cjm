@@ -1,6 +1,6 @@
-# ТЗ: цепочка «промпты → автоконкуренты / аналитика» перед Create
+﻿# ТЗ: цепочка «промпты → автоконкуренты / аналитика» перед Create
 
-Основной документ с прототипом: [`02_report_CJM_blockers_RICE.html`](./02_report_CJM_blockers_RICE.html) (§5)  
+Основной документ с прототипом: [`index.html`](./index.html) (§5)  
 Интерактивный прототип: [`03_prototype_prompts_chain.html`](./03_prototype_prompts_chain.html)  
 UI Kit: https://disk.yandex.ru/d/x5dlITdq4gUQMw
 
