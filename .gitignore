@@ -1,0 +1,18 @@
+# Helpers / drafts (не для Pages)
+_*.py
+_analysis/
+_cv_style/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Исходные записи прохождения (тяжёлые)
+*.mp4
+*.webm
+*.mov
+
+# Локальные заметки
+*.tmp
+*.bak

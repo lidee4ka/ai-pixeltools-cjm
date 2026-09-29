@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang=ru><head><meta charset=utf-8/><title>CJM</title><style>body{font-family:Segoe UI,system-ui,sans-serif;background:#f6f7f9;margin:0;padding:24px;line-height:1.45;color:#1a1a1a}
+main{max-width:1100px;margin:0 auto;background:#fff;padding:32px 40px;border-radius:12px}
+h2{border-bottom:1px solid #e5e7eb;padding-bottom:.4rem} h3{margin-top:1.8rem}
+table{border-collapse:collapse;width:100%;margin:12px 0 24px;font-size:.95rem}
+th,td{border:1px solid #e5e7eb;padding:8px 10px;vertical-align:top;text-align:left}
+th{background:#f3f4f6;width:24%}
+figure.shot{margin:12px 0} figure.shot img{max-width:100%;border:1px solid #e5e7eb;border-radius:8px;display:block}
+figure.shot figcaption{color:#666;font-size:.85rem;margin-top:6px}</style></head><body><main>
+<h2>2. Customer Journey Map (фреймворк NN/g + Jobs-to-be-Done)</h2>
+<p>Использован классический продуктовый каркас <strong>Nielsen Norman Group CJM</strong>, усиленный колонкой <strong>Job / Desired outcome</strong> (Jobs-to-be-Done): этапы пути → цель этапа → действия → точки контакта → ожидания/эмоции → friction → opportunity.  </p>
+<p>Скриншоты этапов сохранены (папка cjm_screens/). Поля «Голос (факт)» убраны: наблюдения переведены в <strong>Friction</strong> и <strong>Emotions</strong> без дословных цитат.</p>
+<strong>Персона:</strong> PM стартапа BEANABOX.  
+<strong>Сквозной Job:</strong> увидеть видимость бренда в ответах ИИ, работать с репутацией, отстроиться от конкурентов и усилить УТП.
+<p>---</p>
+<h3>Этап 0. Awareness / вход на продукт</h3>
+<figure class=shot><img src=cjm_screens/00_landing_form.jpg alt=Этап 0 — форма мониторинга видимости, бренд BEANABOX/><figcaption>Этап 0 — форма мониторинга видимости, бренд BEANABOX</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>Awareness → Intent</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Понять, решает ли сервис задачу «видимость бренда в нейросетях», и запустить анализ для BEANABOX</td></tr>
+<tr><td><strong>Actions</strong></td><td>Открывает i.pixeltools.ru; заполняет бренд, виды деятельности; выбирает нейросети; жмёт запуск анализа</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>Лендинг модуля мониторинга; форма; шаги «форма → анализ → промпты»; CTA</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Оффер близок к JTBD («если советуют не вас — теряете клиентов») → интерес, готовность пробовать</td></tr>
+<tr><td><strong>Friction</strong></td><td>Пока низкий; ценность сформулирована понятно</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Держать value prop в терминах бренда/репутации/УТП до конца first session</td></tr>
+<tr><td><strong>Next</strong></td><td>Редактирование промптов / создание проекта</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 1. Setup — промпты и создание проекта</h3>
+<figure class=shot><img src=cjm_screens/01_prompts_create.jpg alt=Этап 1 — редактирование промптов и «Создать проект»/><figcaption>Этап 1 — редактирование промптов и «Создать проект»</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>Onboarding / Configuration</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Задать запросы, по которым потом смотреть видимость и репутацию</td></tr>
+<tr><td><strong>Actions</strong></td><td>Редактирует список промптов (в т.ч. во внешнем редакторе); создаёт проект</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>Экран «Отредактируйте и добавьте свои промпты…»; кнопка «Создать проект»</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Ожидает, что это «просто ключевые слова»; недооценивает вес шага</td></tr>
+<tr><td><strong>Friction</strong></td><td>Не очевидна <strong>критичность промптов для всего проекта</strong>: на них завязаны ответы нейросетей, видимость, тональность, конкуренты, аудит и рекомендации. Риск: правит «на глаз» → <strong>первая польза потом не про задачу</strong> (не та картина бренда/репутации/УТП). Смешение коммерческих и шумных формулировок; неочевидно, что про репутацию, что про спрос</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Объяснить «от этих промптов зависит весь отчёт»; пресеты под видимость / репутацию / УТП; предупреждение перед create</td></tr>
+<tr><td><strong>Next</strong></td><td>Регистрация / вход</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 2. Registration / Auth</h3>
+<figure class=shot><img src=cjm_screens/02_auth_yandex_google.jpg alt=Этап 2 — авторизация Яндекс ID через Google/><figcaption>Этап 2 — авторизация Яндекс ID через Google</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>Account creation</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Сохранить проект и продолжить без потери введённых данных</td></tr>
+<tr><td><strong>Actions</strong></td><td>Проходит OAuth Яндекс ID; выбирает Google-аккаунт; ждёт редирект</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>Passport Яндекса; popup Google account chooser; loading oauth.yandex.ru</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Ожидает короткий «зарегистрироваться»; раздражение от длинной цепочки</td></tr>
+<tr><td><strong>Friction</strong></td><td>Маршрут продукт → Яндекс → Google → обратно длиннее ожидаемого</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Упростить вход / показать прогресс «сохраняем проект…»</td></tr>
+<tr><td><strong>Next</strong></td><td>Залогиненный кабинет</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 3. First entry — удержание фокуса</h3>
+<figure class=shot><img src=cjm_screens/03_geo_after_login.jpg alt=Этап 3 — уход в GEO-факторы после логина/><figcaption>Этап 3 — уход в GEO-факторы после логина</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>First login / Orientation</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Вернуться к своему проекту и первой видимости бренда</td></tr>
+<tr><td><strong>Actions</strong></td><td>Параллельно открывает GEO-факторы, сводку BEANABOX и смежные вкладки</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>/geo-factors; навигация продукта; сводка проекта</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Хочет «мои результаты»; легко отвлекается на справочный контент</td></tr>
+<tr><td><strong>Friction</strong></td><td>Размытие фокуса: «энциклопедия GEO» вместо линии «мой бренд в ответах ИИ»</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Post-login deep-link в созданный проект + empty/progress state «ваш анализ»</td></tr>
+<tr><td><strong>Next</strong></td><td>Сводка проекта</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 4. Activation gate — сводка и paywall</h3>
+<figure class=shot><img src=cjm_screens/04_summary_paywall.jpg alt=Этап 4 — сводка закрыта paywall 99 ₽/><figcaption>Этап 4 — сводка закрыта paywall 99 ₽</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>Activation / Paywall</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Увидеть видимость, тональность и конкурентное окружение по BEANABOX</td></tr>
+<tr><td><strong>Actions</strong></td><td>Открывает сводку; пытается работать с фильтрами нейросетей</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>Сводка проекта; баннер демо; план шагов; модалка оплаты 99 ₽ / 30 дней</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Ожидает персональный инсайт после создания проекта; сталкивается с размытыми данными</td></tr>
+<tr><td><strong>Friction</strong></td><td>Первая польза по JTBD <strong>ещё не выдана</strong>, хотя проект и промпты уже есть. Шаг 1 плана = оплата, а не просмотр видимости</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>First Look / preview ценности до полного trial; для юрлиц сам paywall часто терпим, если польза убедительна — критичнее стабильность оплаты и скорость aha после неё</td></tr>
+<tr><td><strong>Next</strong></td><td>Оплата trial</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 5. Payment — trial 99 ₽ (внешний контур)</h3>
+<figure class=shot><img src=cjm_screens/05_payment_card_bind.jpg alt=Этап 5 — привязка карты / оплата на tools.pixelplus.ru/><figcaption>Этап 5 — привязка карты / оплата на tools.pixelplus.ru</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>Conversion / Payment</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Разблокировать данные и перейти к видимости бренда</td></tr>
+<tr><td><strong>Actions</strong></td><td>Уходит на 	ools.pixelplus.ru/.../card/bind; пробует ЮMoney (кнопка списания с кошелька то появляется, то пропадает); успешно оплачивает картой 99 ₽</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>Внешний кабинет Пиксель; виджет ЮMoney / ЮKassa; форма карты; экран успеха + бонус</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Готовность платить есть; раздражение от нестабильного UI кошелька, не от цены</td></tr>
+<tr><td><strong>Friction</strong></td><td>Непредсказуемость внешнего платёжного UI; смена домена; автосписания мелким текстом; countdown</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Стабилизировать ЮMoney + явные статусы (must-fix внешнего сервиса). ИМХО: длинный вход за paywall обычно не пугает юрлица при убеждённости в пользе</td></tr>
+<tr><td><strong>Next</strong></td><td>Проект с trial-доступом</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 6. First run — запуск проверки и лимиты</h3>
+<figure class=shot><img src=cjm_screens/06_limits_update_modal.jpg alt=Этап 6 — модалка обновления проекта и лимиты/><figcaption>Этап 6 — модалка обновления проекта и лимиты</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>First value attempt</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Запустить сбор ответов нейросетей по своим промптам</td></tr>
+<tr><td><strong>Actions</strong></td><td>Нажимает «Обновить весь проект»</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>Модалка стоимости: почти все нейросети × 31 промпт ≈ до 34 486 лимитов</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Ожидает «поехали смотреть видимость»; получает sticker shock по лимитам</td></tr>
+<tr><td><strong>Friction</strong></td><td>Неясна цена первого ответа на JTBD; риск сжечь лимиты до понимания ценности</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Safe defaults: 1–2 нейросети, топ-N промптов, перевод лимитов в понятный outcome</td></tr>
+<tr><td><strong>Next</strong></td><td>Ожидание анализа</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 7. Waiting — ожидание первого результата</h3>
+<figure class=shot><img src=cjm_screens/07_waiting_progress.jpg alt=Этап 7 — прогресс анализа и план шагов/><figcaption>Этап 7 — прогресс анализа и план шагов</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>Processing / Waiting</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Понять, когда можно действовать и можно ли уйти со страницы</td></tr>
+<tr><td><strong>Actions</strong></td><td>Смотрит прогресс ~48–51%, шапку отчёта, план шагов</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>Прогресс-бар анализа; онбординг-план; типы промптов в шапке</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Неопределённость, тревога «сломается ли, если закрыть вкладку»</td></tr>
+<tr><td><strong>Friction</strong></td><td>Нет ETA; неясно, что происходит и какие промпты в работе; CTA плана может опережать готовность данных; нет явного разрешения уйти + уведомления</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Waiting experience: ETA, «можно закрыть», push/email, прогресс по смыслу (видимость/тональность)</td></tr>
+<tr><td><strong>Next</strong></td><td>Позиции и упоминания</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 8. First insight — видимость и репутация</h3>
+<figure class=shot><img src=cjm_screens/08_positions_mentions.jpg alt=Этап 8 — позиции и упоминания / тональность/><figcaption>Этап 8 — позиции и упоминания / тональность</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>Aha / First insight</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Понять, видят ли нас ИИ и как говорят о бренде</td></tr>
+<tr><td><strong>Actions</strong></td><td>Смотрит «Позиции и упоминания»; фильтрует нейросети; читает ответы, в т.ч. репутационные</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>Таблица промпт / частота / нейросеть / позиции / тональность / ответ</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Интерес к данным; для молодого бренда слабая видимость ожидаема, но нули без пояснения сбивают</td></tr>
+<tr><td><strong>Friction</strong></td><td>Метрики без интерпретации («что значит 0%?»); плотная таблица без моста к действию по репутации/УТП</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Insight-слой: нормален ли ноль; расхождение тональностей; 1–2 CTA «что сделать»</td></tr>
+<tr><td><strong>Next</strong></td><td>Конкуренты / ассистент</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 9. Competitors — отстройка и УТП</h3>
+<figure class=shot><img src=cjm_screens/09_competitors.jpg alt=Этап 9 — график видимости конкурентов/><figcaption>Этап 9 — график видимости конкурентов</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>Analysis / Competitive framing</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Понять, с кем нас сравнивают нейросети, и отстроиться</td></tr>
+<tr><td><strong>Actions</strong></td><td>Открывает конкурентов; смотрит график; сверяет сайты «конкурентов»; пытается сменить набор</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>Раздел конкурентов; барчарт видимости; списки в аудите</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Ожидает нишевых B2B-игроков зелёного кофе; получает нерелевантный набор → потеря доверия</td></tr>
+<tr><td><strong>Friction</strong></td><td>Автоконкуренты не те; <strong>нельзя принудительно задать свой список</strong> — ломает отстройку и работу с УТП</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Обязательное подтверждение / ручной список конкурентов до сравнения и аудита</td></tr>
+<tr><td><strong>Next</strong></td><td>ИИ-помощник / аудит</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 10. Assist — ИИ-помощник по бренду/УТП</h3>
+<figure class=shot><img src=cjm_screens/10_assistant_footer.jpg alt=Этап 10 — ИИ-помощник, перекрытый footer/><figcaption>Этап 10 — ИИ-помощник, перекрытый footer</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>Guided interpretation</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Уточнить описание бренда и спросить про видимость «человеческим» языком</td></tr>
+<tr><td><strong>Actions</strong></td><td>Пишет вопрос про описание бренда; пытается пользоваться чатом</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>/assistant; suggested prompts; footer сайта</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Рассчитывает на помощника как на переводчика данных; сталкивается с багом UI</td></tr>
+<tr><td><strong>Friction</strong></td><td>Footer перекрывает рабочую область чата</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Hotfix layout ассистента (быстрый reliability-fix)</td></tr>
+<tr><td><strong>Next</strong></td><td>Аудит</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 11. Audit — УТП / SWOT</h3>
+<figure class=shot><img src=cjm_screens/11_audit_swot.jpg alt=Этап 11 — результаты аудита / SWOT/><figcaption>Этап 11 — результаты аудита / SWOT</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>Synthesis / Recommendations input</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Сравнить бренд с правильными конкурентами по продуктам, ЦА, ценам, УТП</td></tr>
+<tr><td><strong>Actions</strong></td><td>Проходит шаг плана «оцените аудит»; выбирает конкурентов из списка; генерирует аудит; пробует автогенерацию</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>Степпер плана; форма аудита; SWOT-блоки; расписание</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Хочет усилить позиционирование; часть текста полезна, но входной набор конкурентов подрывает доверие</td></tr>
+<tr><td><strong>Friction</strong></td><td>Неясно значение «Оцените…»; нельзя уверенно зафиксировать своих конкурентов; автогенерация ведёт себя непрозрачно; читаемость/выравнивание</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Аудит только по подтверждённому списку; ясные CTA и состояния шагов</td></tr>
+<tr><td><strong>Next</strong></td><td>Рекомендации / доступы</td></tr>
+</table>
+<p>---</p>
+<h3>Этап 12. Next actions — рекомендации и collaboration</h3>
+<figure class=shot><img src=cjm_screens/12_access_settings.jpg alt=Этап 12 — доступ к проекту, ошибка пользователя/><figcaption>Этап 12 — доступ к проекту, ошибка пользователя</figcaption></figure>
+<table>
+<tr><th>Слой CJM</th><th>Содержание</th></tr>
+<tr><td><strong>Stage</strong></td><td>Retention / Collaboration</td></tr>
+<tr><td><strong>Job / Desired outcome</strong></td><td>Понять «что делать дальше» и при необходимости отдать доступ коллеге</td></tr>
+<tr><td><strong>Actions</strong></td><td>Смотрит рекомендации; гостевые ссылки; добавляет доступ; заглядывает в события</td></tr>
+<tr><td><strong>Touchpoints</strong></td><td>Рекомендации; настройки доступа; события проекта</td></tr>
+<tr><td><strong>Expectations / Emotions</strong></td><td>Для аналитика картина местами понятна; для PM-сценария collaboration неочевидна</td></tr>
+<tr><td><strong>Friction</strong></td><td>«Пользователь не найден» без правила «сначала регистрация»; пустые события; путаница с почтой владельца</td></tr>
+<tr><td><strong>Opportunity</strong></td><td>Invite-flow с копирайтом; явный next step после first insight</td></tr>
+<tr><td><strong>Outcome прохождения</strong></td><td>First session завершена: данные получены, но с разрывами TTV и доверия на конкурентах/интерпретации</td></tr>
+</table>
+<p>---</p>
+<h3>Границы исследования (не заявляем как проверенное)</h3>
+<p>- Полный путь без оплаты 99 ₽ (в записи оплата была).</p>
+<p>- Стабильность ЮMoney на всех браузерах / без VPN.</p>
+<p>- Демо-проект «из коробки» как отдельный трек.</p>
+</main></body></html>
